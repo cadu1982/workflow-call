@@ -15,7 +15,7 @@ jobs:
       - run: echo ${{ needs.job1.outputs.firstword }} ${{ needs.job1.outputs.secondword }}
 
   job3:
-    uses: cadu1982/hello-work/.github/workflows/workflow-reusable.yml@master
+    uses: cadu1982/hello-work/.github/workflows/work-reusable.yml@master
 
   job4:
     runs-on: ubuntu-latest
