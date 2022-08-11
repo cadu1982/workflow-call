@@ -16,9 +16,5 @@ jobs:
 
   job3:
     uses: cadu1982/hello-work/.github/workflows/work-reusable.yml@master
-
-  job4:
-    runs-on: ubuntu-latest
-    needs: job3
-    steps:
-      - run: echo ${{ needs.job3.outputs.random-number }} 
+    needs: job2
+  
